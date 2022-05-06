@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { ResultComponent } from './result/result.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
 // import { AuthGuard } from './auth/auth.guard';
 
@@ -13,6 +14,8 @@ const routes: Routes = [
     { path: 'student-dashboard', component: StudentDashboardComponent },
     { path: 'admin-dashboard', component: AdminDashboardComponent },
     { path: 'quiz', component: QuizComponent },
+    { path: 'result', component: ResultComponent },
+
 
 
     // {

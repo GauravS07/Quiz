@@ -52,6 +52,7 @@ ngOnChanges(){
   }
 
   loadQuiz(quizName: string) {
+      
     this.quizService.get(quizName).subscribe(res => {
     console.log("res",res)
       this.quiz = new Quiz(res);
@@ -114,8 +115,6 @@ ngOnChanges(){
   onSubmit() {
     let answers = [];
     this.quiz.questions.forEach(x => answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered': x.answered }));
-
-    // Post your data to the server here. answers contains the questionId and the users' answer.
     console.log(this.quiz.questions);
     this.mode = 'result';
   }

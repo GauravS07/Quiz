@@ -19,6 +19,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { QuizComponent } from './quiz/quiz.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ResultComponent } from './result/result.component';
+import { HeaderComponent } from './header/header.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { ResultComponent } from './result/result.component';
     StudentDashboardComponent,
     AdminDashboardComponent,
     QuizComponent,
-    ResultComponent
+    ResultComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { ResultComponent } from './result/result.component';
     MatToolbarModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

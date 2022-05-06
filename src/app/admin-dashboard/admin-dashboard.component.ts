@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminDashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router:Router) { }
 
   cards: {title: string, subtitle: string, content: string, url: string}[] = [
     {title: 'Gaurav', subtitle: 'Student', content: '', url: './assets/logo.jpeg'},
@@ -15,6 +16,10 @@ export class AdminDashboardComponent implements OnInit {
   ];
 
   ngOnInit(): void {
+  }
+
+  result(){
+      this.router.navigate(['/result'])
   }
 
 }
