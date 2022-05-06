@@ -1,3 +1,30 @@
+Steps To Run This Project
+
+1. npm install
+2. ng serve
+3. Username:Sagar
+   password:Sagar
+   This For Student
+4. Username:Admin
+   password:Admin123
+   This For Admin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Practical
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
